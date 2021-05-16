@@ -5,13 +5,49 @@
 </center></font>
 
 ## Using LSTM (Long Short-Term Memory) to Create a Lyric Generator for Punk Rock Music
+### Background Information
 The idea for this project is to create a lyric generator based off of  punk rock music. The Long Short-Term Memory neural network trained on a set of punk rock artists from the AZ Song Lyrics Dataset found on <a href = 'https://www.kaggle.com/albertsuarez/azlyrics'>Kaggle</a>.
 
 Due to the size of the procject, the LSTM can only write lyrics in the style of the following artists:
 
+<div class="row">
+  <div class="column">
+    <p>
+        
+- All Time Low
+- Dashboard Confessional
+- A Day to Remember
+- Good Charlotte
+- Green Day
+- Jimmy Eat World
+- The Menzingers</p>
+  </div>
+  <div class="column">
+    <p>
+      
+- My Chemical Romance
+- Paramore
+- Simple Plan
+- State Champs
+- Story of the Year
+- The Story So Far
+- Taking Back Sunday
+- Yellowcard</p>
+  </div>
+</div>
 
-### Background Information
+</body>
+</html>
 
+
+
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+
+
+
+</div>
 
 
 ### The Model
@@ -25,11 +61,12 @@ In order for the model to take these two inputs, for the lyrics, we first tokeni
 
 
 ### Conclusion
-Transfer learning is a powerful tool and extremely useful tool and baseline when building an image processing convolutional neural network. Although the models were not as accurate as I wanted them to be, I believe they still performed well given the task at hand. The biggest take away I had from this project was lighting and angles of images make a difference. If possible, when building a model, make sure to distort images (e.g. change lighting using contrast and brightness, different angles for pictures, etc.) during training so the model can, potentially, have more accurate predictions during testing.
+
 
 ### Future Direction
-- Add more bands to the last embedding layer
-- Allow for different genres
+- Refine model
+    - Make outputs more currated to the artist whose writing style we are supposed to immitate
+- Add more artists and song lyrics
 
 ### References
 [1] https://www.kaggle.com/albertsuarez/azlyrics
