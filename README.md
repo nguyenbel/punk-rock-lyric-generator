@@ -8,11 +8,7 @@
 ### Background Information
 The idea for this project is to create a lyric generator based off of  punk rock music. The Long Short-Term Memory neural network trained on a set of punk rock artists from the AZ Song Lyrics Dataset found on <a href = 'https://www.kaggle.com/albertsuarez/azlyrics'>Kaggle</a>.
 
-Due to the size of the procject, the LSTM can only write lyrics in the style of the following artists:
-
-<div class="row">
-  <div class="column">
-    <p>
+Due to the size of the procject, the LSTM can only write lyrics in the style of the following 15 artists:
         
 - All Time Low
 - Dashboard Confessional
@@ -20,11 +16,7 @@ Due to the size of the procject, the LSTM can only write lyrics in the style of 
 - Good Charlotte
 - Green Day
 - Jimmy Eat World
-- The Menzingers</p>
-  </div>
-  <div class="column">
-    <p>
-      
+- The Menzingers
 - My Chemical Romance
 - Paramore
 - Simple Plan
@@ -32,22 +24,7 @@ Due to the size of the procject, the LSTM can only write lyrics in the style of 
 - Story of the Year
 - The Story So Far
 - Taking Back Sunday
-- Yellowcard</p>
-  </div>
-</div>
-
-</body>
-</html>
-
-
-
-<div class="row">
-  <div class="column"></div>
-  <div class="column"></div>
-
-
-
-</div>
+- Yellowcard
 
 
 ### The Model
