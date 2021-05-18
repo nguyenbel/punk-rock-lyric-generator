@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ahmedur Rahman Shovon">
+    <title>Punk Rock Lyric Generator</title>
+</head>
+<body>
+<center>
+        <form action = "/predict" method = 'POST'>
+    <p>Write your lyrics<p>
+        <input type = "text" name = "lyrics" />
+
+  <p>Select an artist from the list.</p>
+  <form id="form1" action="/login" method="POST" enctype="multipart/form-data">
+    <select id="mySelect" name = "artists">
+      <option value="all time low">All Time Low</option>
+      <option value="dashboard confessional">Dashboard Confessional</option>
+      <option value="day to remember, a">A Day to Remember</option>
+      <option value="good charlotte">Good Charlotte</option>
+      <option value="green day">Green Day</option>
+      <option value="jimmy eat world">Jimmy Eat World</option>
+      <option value="menzingers, the">The Menzingers</option>
+      <option value="my chemical romance">My Chemical Romance</option>
+      <option value="paramore">Paramore</option>
+      <option value="simple plan">Simple Plan</option>
+      <option value="state champs">State Champs</option>
+      <option value="'story of the year'">Story of the Year</option>
+      <option value="story so far, the">The Story So Far</option>
+      <option value="taking back sunday">Taking Back Sunday</option>
+      <option value="yellowcard">Yellowcard</option>
+    </select>
+    <p> Input a length you want the lyrics to be (total length includes length of prompt)<p>
+    <input type = "text" name = "length" />
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
+</center>
