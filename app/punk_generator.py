@@ -28,12 +28,13 @@ def submission_page():
 @app.route('/predict', methods = ["GET", "POST"])
 def predict():
     prompt = str(flask.request.form['lyrics'])
+    prompt2 = str(flask.request.form['lyrics'])
     author = str(flask.request.form['artists'])
     length = int(flask.request.form['length'])
     vocab_size = 5979
     # edge case; if prompt is as long as the length wanted
     if len(prompt.split(' ')) == length:
-        return prompt
+        return f'"{prompt}" in the style of "{author}:"           {prompt2}'
 
     else:
         a = [re.sub(r'\W', '', string = author)]
@@ -57,8 +58,8 @@ def predict():
 
             # add word to the prompt
             if len(next_word) > 1 and (next_word != 'a' or next_word != 'i'):
-                prompt += ' ' + str(next_word)
-        return prompt
+                prompt2 += ' ' + str(next_word)
+        return f'"{prompt}" in the style of "{author}:"           {prompt2}'
 
 
 

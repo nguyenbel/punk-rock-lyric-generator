@@ -1,5 +1,9 @@
 # Punk Rock Lyric Generator
-<center><img src = "https://images-na.ssl-images-amazon.com/images/I/71tgC6Xz7JL._SY800_.jpg" width = 500, class = 'center'>
+## Using LSTM (Long Short-Term Memory) to Create a Lyric Generator for Punk Rock Music
+### by Belinda Nguyen
+[Linkedin](https://www.linkedin.com/in/bnguyen05/) * [Github](https://github.com/nguyenbel) * [Slides](https://github.com/nguyenbel/punk-rock-lyric-generator/blob/master/punk_rock_generator_presentation)
+
+<center><img src = "https://images-na.ssl-images-amazon.com/images/I/71tgC6Xz7JL._SY800_.jpg" width = 300, class = 'center'>
 <br>
     <font size = 1.5>Image from: <a href = 'https://www.amazon.com/Rock-Robotic-Steampunk-Print-Decor/dp/B08F93NYF5'>https://www.amazon.com/Rock-Robotic-Steampunk-Print-Decor/dp/B08F93NYF5</a>
 </center></font>
@@ -8,7 +12,7 @@
 ### Background Information
 The idea for this project is to create a lyric generator based off of  punk rock music. The Long Short-Term Memory neural network trained on a set of punk rock artists from the AZ Song Lyrics Dataset found on <a href = 'https://www.kaggle.com/albertsuarez/azlyrics'>Kaggle</a>.
 
-Due to the size of the procject, the LSTM can only write lyrics in the style of the following 15 artists:
+The LSTM can write lyrics in the style of the following 15 artists:
         
 - All Time Low
 - Dashboard Confessional
@@ -34,7 +38,7 @@ In order for the model to take these two inputs, for the lyrics, we first tokeni
 
 
 ### Results
-
+<img src = "https://github.com/nguyenbel/punk-rock-lyric-generator/blob/main/imgs/loss_v_acc.png">
 
 
 ### Conclusion
