@@ -34,7 +34,7 @@ def predict():
     vocab_size = 5979
     # edge case; if prompt is as long as the length wanted
     if len(prompt.split(' ')) == length:
-        return f'"{prompt}" in the style of "{author}:"           {prompt2}'
+        return flask.render_template('predict.html', prompt = prompt, prompt2 = prompt2, author = author)
 
     else:
         a = [re.sub(r'\W', '', string = author)]
@@ -59,7 +59,7 @@ def predict():
             # add word to the prompt
             if len(next_word) > 1 and (next_word != 'a' or next_word != 'i'):
                 prompt2 += ' ' + str(next_word)
-        return f'"{prompt}" in the style of "{author}:"           {prompt2}'
+        return flask.render_template('predict.html', prompt = prompt, prompt2 = prompt2, author = author)
 
 
 

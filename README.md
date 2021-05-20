@@ -38,6 +38,8 @@ In order for the model to take these two inputs, for the lyrics, we first tokeni
 
 
 ### Results
+Using Google's Colaboratory cloud computing environment, I was able to run 100 epochs to train my model. As pictured in the graph, the model becomes more and more accurate at predicting the words in the training set as we increase the number of epochs.
+
 <img src = "https://github.com/nguyenbel/punk-rock-lyric-generator/blob/main/imgs/loss_v_acc.png">
 
 

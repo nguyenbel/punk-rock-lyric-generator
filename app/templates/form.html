@@ -8,12 +8,11 @@
 </head>
 <body><center>
         <form action = "/predict" method = 'POST'>
-    <p>Write your lyrics<p>
-        <input type = "text" name = "lyrics" />
-
-  <p>Select an artist from the list.</p>
+    <p><font size = 10>Write your lyrics</font><p>
+        <input style="font-size:25px; type = "text" name = "lyrics" />
+  <p><font size = 10>Select an artist from the list.</font></p>
   <form id="form1" action="/login" method="POST" enctype="multipart/form-data">
-    <select id="mySelect" name = "artists">
+    <select style = 'font-size:25px;' id="mySelect" name = "artists">
       <option value="all time low">All Time Low</option>
       <option value="dashboard confessional">Dashboard Confessional</option>
       <option value="day to remember, a">A Day to Remember</option>
@@ -30,9 +29,9 @@
       <option value="taking back sunday">Taking Back Sunday</option>
       <option value="yellowcard">Yellowcard</option>
     </select>
-    <p> Input a length you want the lyrics to be (total length includes length of prompt)<p>
-    <input type = "text" name = "length" />
-    <input type="submit" value="Submit">
+    <p> <font size = 10>Input a length you want the lyrics to be (total length includes length of prompt)</font><p>
+    <input style="font-size:25px; type = "text" name = "length" />
+    <div><input type="submit" value="Submit" style="height:36px; width:100px; font-size: 25px"></div>
   </form>
 
 </body>
