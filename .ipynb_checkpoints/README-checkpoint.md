@@ -32,7 +32,7 @@ The LSTM can write lyrics in the style of the following 15 artists:
 
 
 ### The Model
-<img src = 'https://github.com/nguyenbel/punk-rock-lyric-generator/blob/main/imgs/punk_rock_model.png'>
+<img src = 'https://github.com/nguyenbel/punk-rock-lyric-generator/blob/main/imgs/punk_rock_model.png' height = 500>
 The LSTM model takes in two inputs: the song lyrics and the respective artist of the song. 
 
 In order for the model to take these two inputs, for the lyrics, we first tokenize the lyrics columns of the dataframe and fit the string version of each song to the text, then convert the tokenized text to a sequence, and, finally, created an n-gram padded sequence for each song (length of 11). For the artists, we stripped the white spaces for each artist/band so they were read as a single string, tokenized and fit the artists to the text, and, finally, converted the tokenized text to a sequence and appended that to a list which we later changed to a Numpy array.
